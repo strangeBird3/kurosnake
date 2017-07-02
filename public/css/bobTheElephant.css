@@ -10,6 +10,14 @@ body p {
 /* 
  * Navigation Menu */
 
+.fa-fire {
+	color: black;
+}
+
+.fa {
+	color: black;
+}
+
 .navbar-default {
        background-image: linear-gradient(to bottom,#fff 0,#ffffff 100%);
 }
@@ -105,10 +113,6 @@ hr {
 }
 
 #homePic {
-}
-
-
-#homePic {
     border-radius: 4px;	
 }
 
@@ -127,6 +131,11 @@ hr {
     width: 100px;
     margin: auto;
     
+}
+
+#private_fee {
+	color:#337ab7;
+	font-size: 18px;
 }
 
 /*

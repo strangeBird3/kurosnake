@@ -2,17 +2,17 @@ var http         = require('http');
 var fs           = require('fs');
 var path         = require('path');
 
-// custom imports
+// npm dependencies 
 var express = require('express');
 var app = express();
 var handlebars = require('express-handlebars');
 
-//openshift settings
+// server config
 var server_port = process.env.PORT || 8080;
 
 
 
-// custom settings
+// app settings
 app.set('views', __dirname + '/views');
 app.engine('handlebars', handlebars({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
@@ -31,5 +31,5 @@ app.get('/buyBob', function(req, res){
 });
 
 app.listen(server_port, function(){
-  console.log("Listening on port" + server_port);
+  console.log("Listening on port " + server_port);
 });
